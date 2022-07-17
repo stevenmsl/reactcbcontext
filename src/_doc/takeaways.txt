@@ -1,0 +1,24 @@
+Context
+- define the context #TA01
+  - the context will expose values and methods that components can
+    access
+- define the context provider #TA02
+  - React component that is used as a container whose children will 
+    have access to the context 
+- wrap the App inside the context provider #TA03
+  - now every App's child component has access to the context
+- access the context using the useContext hook #TA04
+
+Reducer
+- define the reducer to maintain the state #TA05
+- use the useReducer hook to access the state and the dispatch method #TA06
+
+forwardRef
+- this allows the parent to access an element inside a child component 
+  imperatively #TA07
+- should be avoided unless there are no other choices
+- the parent defines a ref that will be set to point to the element 
+  inside the child component #TA08
+- set the connection between the parent and child #TA09
+- the child component uses forwardRef to expose the ref of the element
+  it contains #TA07
